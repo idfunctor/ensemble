@@ -1,31 +1,7 @@
 // We import the CSS which is extracted to its own file by esbuild.
 // Remove this line if you add a your own CSS build pipeline (e.g postcss).
 import "../css/app.css"
-import { mount } from "./mounter";
-import { GreeterProps, Greeter } from "./components/Greeter";
-
-let Hooks = { Greeter: {} }
-
-Hooks.Greeter = {
-  mounted() {
-    this.unmountComponent = mount(this.el.id, this.opts(), Greeter);
-  },
-
-  destroyed() {
-    if (!this.unmountComponent) {
-      console.error("Greeter unmountComponent not set");
-      return;
-    }
-
-    this.unmountComponent(this.el);
-  },
-
-  opts(): GreeterProps {
-    return {
-      name: "Ensemble",
-    };
-  },
-}
+import { Hooks } from "./hooks";
 
 // If you want to use Phoenix channels, run `mix help phx.gen.channel`
 // to get started and then uncomment the line below.

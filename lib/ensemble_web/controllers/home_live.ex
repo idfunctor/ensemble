@@ -11,7 +11,7 @@ defmodule EnsembleWeb.HomeLive do
     ~H"""
     <div
       id="greeting"
-      phx-hook="Greeter"
+      phx-hook="Home"
       phx-update="ignore">
     </div>
     """

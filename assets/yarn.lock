@@ -45,10 +45,20 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
+deepmerge@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
+  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
+konva@^8.3.9:
+  version "8.3.11"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-8.3.11.tgz#ffd8012a8240498d63652218c8db13e7fb51a3e7"
+  integrity sha512-5PsE3oQYnzwwUUCv8gV2zpLjenotqLy0AmXauyy9GPi+UHIynmLkrsAIZfEkjPNEgAwmh5r6I0JQa1fTt8ZrGw==
 
 loose-envify@^1.1.0:
   version "1.4.0"
@@ -57,15 +67,33 @@ loose-envify@^1.1.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-phoenix@^1.6.11:
+"phoenix@file:../deps/phoenix":
   version "1.6.11"
-  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.6.11.tgz#e29c3658c8fd6ba509e87130d2b1b20adc6a9a53"
-  integrity sha512-z/MSg9yY20JhTSj6tKmOYE9p+PuU+FVstYtgBfIZPGNLKhSuV9Zcs9LLLKWeiJ9EUzaXS/QeO8Po4+jJnyNfMw==
 
-phoenix_live_view@^0.17.11:
+"phoenix_html@file:../deps/phoenix_html":
+  version "3.2.0"
+
+"phoenix_live_react@file:../deps/phoenix_live_react":
+  version "0.4.1"
+
+"phoenix_live_view@file:../deps/phoenix_live_view":
   version "0.17.11"
-  resolved "https://registry.yarnpkg.com/phoenix_live_view/-/phoenix_live_view-0.17.11.tgz#dfedd444c8671416d144d8db1bfc0672aea30072"
-  integrity sha512-OL0yCzPeV2hjwJIjLWkNDIJ3D+pGhprbIK/s2Y0CImggq0t0TcueNjTkKnTu0wnMalH0EmQXt9R024XDjiTtiQ==
+
+pikaso-react-hook@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/pikaso-react-hook/-/pikaso-react-hook-2.1.1.tgz#2584fa762dfd8438cdd4c7dc8a437cfd1ef8b732"
+  integrity sha512-43Ahp2c/fdYGmOm5fPGz5XdtVYpQ68TtPor9klqXDdX0alPAvKWVA28mPjAtXkIbg3WHBlMd9PpgNQbJxldzTA==
+  dependencies:
+    pikaso "^2.7.3"
+
+pikaso@^2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/pikaso/-/pikaso-2.7.3.tgz#6f8248220798c4f085f96effb09fade6dd8c371b"
+  integrity sha512-6c2m+zjEiZOL/Bce6OJWolMqrfJr44Lbwl+oYZU+4N/hYIBUFofs/KeWFQVG8b5OIsnp+2ys9adHHDDH30W3LA==
+  dependencies:
+    deepmerge "^4.2.2"
+    konva "^8.3.9"
+    typescript "^4.7.3"
 
 react-dom@^18.2.0:
   version "18.2.0"
@@ -88,3 +116,8 @@ scheduler@^0.23.0:
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
+
+typescript@^4.7.3:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"
+  integrity sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==
