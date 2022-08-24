@@ -1,0 +1,5 @@
+<div 
+  id="greeting"
+  phx-hook="Greeter"
+  phx-update="ignore">
+</div>
