@@ -1,0 +1,11 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <marker orient="auto" refY="3.5" refX="0" markerHeight="7" markerWidth="10" id="arrowhead">
+    <polygon id="svg_1" points="0 0, 10 3.5, 0 7" fill="blue" />
+   </marker>
+  </defs>
+  <line transform="rotate(-30.963756561279297 170.9999999999999,208.99999999999997) " stroke="blue" id="svg_2" marker-end="url(#arrowhead)" stroke-width="15" y2="209" x2="296" y1="209" x1="46"/>
+ </g>
+</svg>

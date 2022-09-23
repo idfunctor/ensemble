@@ -10,8 +10,8 @@ defmodule EnsembleWeb.HomeLive do
   def render(assigns) do
     ~H"""
     <div
-      id="greeting"
-      phx-hook="Home"
+      id="live-editor"
+      phx-hook="Editor"
       phx-update="ignore">
     </div>
     """

@@ -1,5 +1,5 @@
-import { Home_Hook } from "./components/Home";
+import { Editor_Hook } from "./modules/Editor/Editor";
 
 export const Hooks = {
-  Home: Home_Hook,
+  Editor: Editor_Hook,
 }
