@@ -1,9 +1,8 @@
 import React from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 
-export function mount<T>(id: string, opts: T, Component: React.FC<T>) {
+export function mount<T extends JSX.IntrinsicAttributes>(id: string, opts: T, Component: React.FC<T>) {
   const rootElement = document.getElementById(id);
-  console.log({ yolo: rootElement })
 
   render(
     <React.StrictMode>
